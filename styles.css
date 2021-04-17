@@ -1,0 +1,58 @@
+
+/*PARA COLOCAR IMGS A BLANCO Y NEGRO*/
+#galeria img{
+  filter: grayscale(1); 
+ }
+ 
+  /*PARA COLOCAR IMGS A COLOR CUANDO PASAMOS EL MOUSE*/
+ #galeria .cuadrado:hover img{
+   filter: grayscale(0); 
+ }
+ /*PARA OCULTAR EL TITULO DE LA IMG*/
+#galeria .cuadrado:hover h4{
+  display: none;
+}
+footer .barra-footer{
+  text-align:center;
+  background-color: grey;
+  padding: 10px 15px;
+}
+footer h3{
+  text-align: center;
+}
+footer ul{
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+ 
+}
+footer ul li{
+  margin: 10px;
+  
+} 
+footer .logo-footer{
+  width: 100%;
+}
+footer p{
+  margin-bottom: 30px;
+}
+footer a{
+  color: #fff;
+}
+footer .redes{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+footer .redes li a:hover{
+  color: #bf0603;
+}
+footer .columna-25 li a:hover{
+  color: #bf0603;
+}
+footer .redes a{
+  margin: 0 10px;  
+}
