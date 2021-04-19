@@ -1,13 +1,15 @@
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 @font-face{
   font-family: "Oswald";
-  src: url(./Fonts/Oswald/Oswald-Regular);
+  src: url(../Fonts/Oswald/Oswald-Regular);
 }
 :root{
-  --green:#1dd1a1;
+  --green:#7efff5;
   --black:#222f3e;
   --violet:#f368e0;
   --white:#f5f6fa;
@@ -62,7 +64,7 @@ a{
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(./img/header\ 1.jpg);
+  background-image: url(../img/header\ 1.jpg);
   /*EFECTO*/
   background-attachment: fixed;
   background-position: center;
@@ -210,7 +212,7 @@ a{
   width: 100%;
   height: 100%;
   /*EFECTO*/
-  background-image: url("./img/medio.png");
+  background-image: url("../img/medio.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -336,8 +338,57 @@ a{
 }
 /*FIN GALERIA*/
 
+/*~FOOTER*/
+.footer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*EFECTO*/
+  background-image: url("../img/medio\ 1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.footer .deg-footer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.footer .ejeZfooter{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer .footer-content{
+  width: 90%;
+  padding: 100px;
+  margin: auto;
+
+  
+}
+.footer .footer-content .footer-title{
+  width: 60%;
+  margin: auto;
+  border: 2px solid #fff;
+  padding: 15px;
+}
+.footer .footer-content .footer-title h2{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 10px;
+
+}
+.footer .footer-content .footer-title hr{
+  width: 90%;
+  height: 2px;
+  margin: auto;
+}
+
 /*~ CONTACTO*/
-#contactanos .footer-content .formulario{
+.footer .footer-content .formulario{
   width: 60%;
   background: #fff;
   border-radius: 50px;
@@ -400,7 +451,7 @@ a{
   transition: .5s;
 }
 .footer .footer-content .formulario #formulario button:hover{
-  background: var(--violet);
+  background: #ff0a54;
 }
 .footer .footer-content #formulario .mensaje-form{
   width: 100%;
@@ -412,50 +463,57 @@ a{
   color: var(--black);
   line-height: 20px;
 }
-/*FIN CONTACTO*/
-
-
-footer .barra-footer{
-  text-align:center;
-  background-color: grey;
-  padding: 10px 15px;
-}
-footer h3{
+.footer .footer-content .datos h3{
   text-align: center;
+  color: #fff;
 }
-footer ul{
+
+.footer ul{
   padding: 0;
   list-style: none;
   margin: 0;
-  text-align: left;
- 
+  text-align: center;
+  color: #ffff;
 }
-footer ul li{
+.footer ul li{
   margin: 10px;
-  
 } 
-footer .logo-footer{
-  width: 100%;
-}
-footer p{
-  margin-bottom: 30px;
-}
-footer a{
+.footer a{
   color: #fff;
 }
-footer .redes{
-  font-size: 30px;
+.footer .redes{
+  font-size: 20px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  
+
 }
-footer .redes li a:hover{
-  color: #bf0603;
+.footer .redes li a:hover{
+  color: #ff0a54;
 }
-footer .columna-25 li a:hover{
-  color: #bf0603;
-}
-footer .redes a{
+.footer .redes a{
   margin: 0 10px;  
 }
+/*FIN CONTACTO*/
+
+/*~ COPYRIGHT*/
+.footer .footer-content .footer-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 5px solid #fff;
+  /*EFECTO*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-content .footer-text p{
+  color:#fff;
+  font-size: 20px;
+  text-align: center;
+}
+/*FIN COPYRIGHT*/
+/*FIN FOOTER*/
+
