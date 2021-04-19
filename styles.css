@@ -4,13 +4,99 @@
 
 @font-face{
   font-family: "Oswald";
-  src: url(../Fonts/Oswald/Oswald-Regular);
+  src: url(./Fonts/Oswald/Oswald-Regular);
+}
+:root{
+  --green:#1dd1a1;
+  --black:#222f3e;
+  --violet:#f368e0;
+  --white:#f5f6fa;
+  --title: 35px;
+  --text: 19px;
+
 }
 body{
   background: #fff;
   overflow-x: hidden;
+  font-family: "Oswald";
 
 }
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*~ BOTON IR ARRIVA*/
+.go-top{
+  position: fixed;
+  bottom: 100px;
+  right: -100%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--green);
+  background: #fff;
+  z-index: 9999;
+  /*EFECTO*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 400ms;
+  border-radius: 40%;
+}
+.go-top:hover{
+  border: 2px solid var(--white);
+  background: #7efff5;
+}
+.go-top:hover span{
+  color: var(--white);
+}
+.go-top > span{
+  font-size: 30px;
+  color: var(--black);
+}
+
+/*~ IMG HEADER*/
+.img-header{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/header\ 1.jpg);
+  /*EFECTO*/
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.img-header .welcome{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*EFECTO*/
+  background: rgba(0, 0, 0, 0.6);
+  /*FIN*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-header .welcome h1{
+  font-size: 50px;
+  color: #fff;
+  font-weight: 200;
+}
+.img-header .welcome hr{
+  width: 730px;
+  height: 2px;
+  background: #fff;
+  border: none;
+  margin-top: 5px;
+}
+
+/*~ FIN IMG HEADER*/
+
 /*~ LINEA DIAGONAL O SKEW*/
 .skew-abajo{
   position: absolute;
@@ -31,19 +117,304 @@ body{
 }
 /*~ FIN LINEA DIAGONAL O SKEW*/
 
+/*~ NAVEGATION*/
+#header{
+  position: relative;
+  width: 100%;
+
+}
+#header .menu .logo{
+  width: 100px;
+  
+}
+#header .menu .logo img{
+  width: 111%;
+}
+#header .menu a{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#header .menu a:hover{
+  color: #7efff5;
+}
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9999;
+
+}
+.menu .logo{
+  margin-left: 100px;
+
+}
+.menu .logo h1 a{
+  text-decoration: none;
+  font-size: var(--title);
+  font-weight: 400;
+}
+/*~ ACERCA DE NOSOTROS*/
+#nosotros{
+  width: 100%;
+  margin-top: 120px;
+}
+#nosotros .info-container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+#nosotros .info-container h1{
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 20px;
+}
+#nosotros .info-container h2{
+  font-size: 30px;
+  font-weight: 100;
+  color: var(--black);
+  text-align: start;
+  margin-bottom: 20px;
+}
+#nosotros .info-container h2 p{
+  text-align: start;
+  font-size: 17px;
+  color: var(--black);
+  line-height: 10px;
+  margin: 5px 0px;
+}
+#nosotros .info-container p{
+  text-align: center;
+  font-size: 17px;
+  color: var(--black);
+  line-height: 35px;
+  margin: 10px 0px;
+}
+/*~ FIN ACERCA DE NOSOTROS*/
+
+/*~ PROUDCTOS*/
+#productos{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*EFECTO*/
+  background-image: url("./img/medio.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+}
+#productos .deg-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#productos .ejeZproductos{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#productos .container-productos{
+  width: 65%;
+  margin: auto;
+  padding-top: 100px;
+}
+#productos .container-productos .title{
+  border: 2px solid #fff;
+  padding: 10px;
+  text-align: center;
+  widows: 50%;
+  margin: auto;
+}
+#productos .container-productos .title h2{
+  font-size: 40px;
+  color: #fff;
+  font-weight: normal;
+}
+#productos .container-productos .title hr{
+  background: #fff;
+  width: 50%;
+  margin: 10px auto;
+}
+#productos .container-productos .productos-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+#productos .container-productos .productos-img img{
+  width: calc(30% - 10px);
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*~ FIN PRODUCTOS*/
+
+/*~ GALERIA*/
+#galeria{
+  width: 100%;
+  margin-top: 120px;
+}
+#galeria .container-galeria{
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+}
+#galeria .title{
+  padding: 10px;
+  text-align: center;
+  widows: 50%;
+  margin: auto;
+}
+#galeria .title h2{
+  font-size: 50px;
+  color: var(--black);
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+#galeria .title hr{
+  width: 60%;
+  margin: auto;
+  height: 2px;
+  background: var(--black);
+  border: none;
+}
+
+#galeria .productos-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+#galeria .productos-img img{
+  width: calc(30% - 10px);
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#galeria h4{
+  padding: 0 15px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  font-size: 18px;  
+}
 /*PARA COLOCAR IMGS A BLANCO Y NEGRO*/
 #galeria img{
-  filter: grayscale(1); 
- }
+  filter: grayscale(1);  
+}
  
   /*PARA COLOCAR IMGS A COLOR CUANDO PASAMOS EL MOUSE*/
- #galeria .cuadrado:hover img{
-   filter: grayscale(0); 
- }
+#galeria .productos-img img:hover{
+  filter: grayscale(0); 
+}
  /*PARA OCULTAR EL TITULO DE LA IMG*/
-#galeria .cuadrado:hover h4{
+#galeria .productos-img h4:hover{
   display: none;
 }
+/*FIN GALERIA*/
+
+/*~ CONTACTO*/
+#contactanos .footer-content .formulario{
+  width: 60%;
+  background: #fff;
+  border-radius: 50px;
+  border: 2px solid var(--green);
+  margin: 50px auto;
+  padding: 30px;
+}
+.footer .footer-content .formulario #formulario{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .footer-content .formulario #formulario label{
+  text-align: center;
+  color: var(--black);
+  font-size: 22px;
+  margin: 30px 0px 10px 0px;
+}
+.footer .footer-content .formulario #formulario input{
+  width: 90%;
+  height: 35px;
+  margin: auto;
+  border: 2px solid var(--green);
+  border-radius: 25px;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  color: var(--black);
+}
+.footer .footer-content .formulario #formulario textarea{
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  border: 2px solid var(--green);
+  border-radius: 25px;
+  outline: none;
+  font-size: 15px;
+  color: var(--black);
+  padding: 20px;
+}
+.footer .footer-content .formulario #formulario .send{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.footer .footer-content .formulario #formulario  button{
+  width: 150px;
+  height: 40px;
+  background: var(--green);
+  border-radius: 24px;
+  border: none;
+  line-height: 40px;
+  outline: none;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+.footer .footer-content .formulario #formulario button:hover{
+  background: var(--violet);
+}
+.footer .footer-content #formulario .mensaje-form{
+  width: 100%;
+  margin:auto;
+  padding:20px;
+}
+.footer .footer-content #formulario .mensaje-form p{
+  font-size: 22px;
+  color: var(--black);
+  line-height: 20px;
+}
+/*FIN CONTACTO*/
+
+
 footer .barra-footer{
   text-align:center;
   background-color: grey;
